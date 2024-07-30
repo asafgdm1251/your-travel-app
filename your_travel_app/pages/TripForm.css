@@ -1,0 +1,210 @@
+/* src/TripForm.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 20px; /* Reduced padding */
+  font-size: 16px; /* Reduced font size */
+  background-image: url('/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 600px; /* Reduced width */
+  margin: 0 auto;
+  padding: 15px; /* Reduced padding */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.logo {
+  width: 180px; /* Reduced size */
+  margin: 0 auto 10px auto; /* Adjusted margin */
+  display: block;
+}
+
+.catchphrase-container {
+  text-align: center;
+  margin-top: 10px; /* Adjusted margin */
+}
+
+.catchphrase {
+  text-align: center;
+  font-size: 20px; /* Reduced font size */
+  margin-bottom: 10px; /* Adjusted margin */
+  color: #555;
+  font-weight: 600;
+}
+
+form {
+  padding: 20px; /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+input, select, button {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  margin-top: 8px; /* Adjusted margin */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 16px; /* Reduced font size */
+}
+
+button {
+  background-color: #5c67f2;
+  color: white;
+  font-size: 16px; /* Reduced font size */
+  border: none;
+  cursor: pointer;
+  margin-top: 10px; /* Adjusted margin */
+}
+
+button:hover {
+  background-color: #5058e2;
+}
+
+h2 {
+  color: #333;
+  font-size: 20px; /* Reduced font size */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  padding: 15px; /* Reduced padding */
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+  font-size: 16px; /* Reduced font size */
+}
+
+input[type="date"] {
+  font-size: 16px; /* Reduced font size */
+  padding: 10px; /* Reduced padding */
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+input[type="date"]:hover {
+  border-color: #888;
+}
+
+input[type="date"]:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.5);
+  border-color: #2196f3;
+}
+
+.loading-container {
+  position: fixed; /* This keeps the loader in the same place even when scrolling */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 10px;
+  z-index: 1000;
+}
+.loading-container img {
+  width: 400px;  /* Set the width smaller as needed */
+  height: auto;  /* Set the height explicitly if 'auto' doesn't work */
+}
+
+/* New styles for destination cards */
+.destinations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Adjusted gap */
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.destination-card {
+  background: white;
+  padding: 15px; /* Reduced padding */
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+  font-size: 16px; /* Reduced font size */
+  width: 18%;
+  min-width: 150px; /* Adjusted width */
+  text-align: center;
+  cursor: pointer;
+}
+
+.destination-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.destination-card.selected {
+  background-color: #4d7bf7;
+  color: white;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.icon {
+  margin-right: 8px; /* Adjusted margin */
+  width: 20px; /* Adjusted size */
+  height: 20px; /* Adjusted size */
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px; /* Adjusted margin */
+}
+
+.day-details-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 15px; /* Adjusted gap */
+  flex-wrap: wrap;
+}
+
+.day-title {
+  font-family: 'Georgia', serif;
+  font-size: 18px; /* Reduced font size */
+  color: #333;
+}
+.day-header {
+  font-weight: bold;
+  font-size: 18px; /* Adjust as needed */
+}
+
+.day-card {
+  width: 100%;
+  margin-bottom: 15px; /* Adjusted margin */
+  padding: 15px; /* Reduced padding */
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .day-card {
+    width: 100%;
+  }
+}
